@@ -1,0 +1,6 @@
+platform :ios, '7.0' 
+pod 'MBProgressHUD', '~> 0.8'
+pod 'AFNetworking',  '~> 2.0'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'MJExtension', '~> 2.5.6'
+pod 'libqrencode', '~> 3.4.2'

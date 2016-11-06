@@ -1,0 +1,110 @@
+//
+//  PrefixHeader.pch
+//  小事一桩1
+//
+//  Created by MacPro on 15-7-6.
+//  Copyright (c) 2015年 湖南湘汇天承传媒有限公司. All rights reserved.
+//
+
+#ifndef ____1_PrefixHeader_pch
+#define ____1_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//首页类别
+#define INDEX_HOME 100
+#define INDEX_SHOPPING_CENTER 101
+#define INDEX_SHOPPING_CART 102
+#define INDEX_PERSON 103
+
+#define BKMAPKEY @"VRBkamaeQc5E6K81IdxuuSGR" //个人版百度key
+
+//tabBar的高度
+#define tabBarHeight1 49.0f
+
+//tabbar的颜色
+#define tabBarColor UIColorFromRGB(0x66C1B1)
+
+//导航栏颜色
+#define navigationBarColor (UIColorFromRGB(0x42618F))
+
+//导航栏btn颜色
+#define navigationBarBtnColor (UIColorFromRGB(0x42618F))
+//设置图片
+#define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
+
+#define WX_APP_ID @"wx460c5edceb33873c"//正式APPID
+//#define WX_APP_ID @"wxb4ba3c02aa476ea1"//网上找到的范例
+
+
+//屏幕尺寸
+#define mainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define mainScreenHeight [UIScreen mainScreen].bounds.size.height
+#define IS_IPHONE4 [UIScreen mainScreen].bounds.size.width==480
+#define SCREEN_HEIGHT_OF_IPHONE5        568
+
+
+//十六进制的颜色值转化
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//判断系统号
+#define IOS_VERSION(x) ([[[UIDevice currentDevice]systemVersion] floatValue] >= x)
+#define IS_IOS_7 ([[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0)
+#define IS_IOS_8_OR_LATER ([[[UIDevice currentDevice]systemVersion] floatValue] >= 8.0)
+
+
+//判断状态栏的高度
+#define STATUSBAR_OFFSET (IS_IOS_7?20:0)
+
+#define WXAPPKEY @"wx8682c8baeeb641fc" //微信appkey
+#define WXAPP_ID @"com.tencent.xin" //微信app id
+
+#define WeiboAPPKEY @"123455" //新浪微博appkey
+#define WeiboAPP_ID @"com.sina.weibo" //新浪微博app id
+#define WeiboRedirectURI @"http://www.sina.com"
+
+#define TencentAPPKEY @"101070623" //腾讯QQ appkey
+#define TencentAPP_ID @"com.tencent.mqq" //腾讯QQ app id
+#define TencentRedirectURI @"www.qq.com"
+
+#define CAM_CARD_ID @"com.intsig."
+
+//最大的字体模块的标题
+#define FONTSIZE1 [UIFont systemFontOfSize:18]
+#define FONTSIZE1_BOLD [UIFont boldSystemFontOfSize:18]
+#define COLORSIZE1 (UIColorFromRGB(0xFFFFFF))
+
+//2号字体 适用于一些副标题
+#define FONTSIZE2 [UIFont systemFontOfSize:16]
+#define FONTSIZE2_BOLD [UIFont boldSystemFontOfSize:16]
+#define COLORSIZE2 (UIColorFromRGB(0x717070))
+
+//3号字体 适用cell的内容
+#define FONTSIZE3 [UIFont systemFontOfSize:16]
+#define FONTSIZE3_BOLD [UIFont boldSystemFontOfSize:14]
+#define COLORSIZE3 (UIColorFromRGB(0x949393))
+
+//4号字体 适用cell内容的副标题
+#define FONTSIZE4 [UIFont systemFontOfSize:12]
+#define FONTSIZE4_BOLD [UIFont boldSystemFontOfSize:12]
+#define COLORSIZE4_W (UIColorFromRGB(0xFFFFFF))
+#define COLORSIZE4 (UIColorFromRGB(0x9B9A9A))
+
+//5号字体
+#define FONTSIZE5 [UIFont systemFontOfSize:13]
+#define FONTSIZE5_BOLD [UIFont boldSystemFontOfSize:10]
+#define COLORSIZE5 (UIColorFromRGB(0x334D7C))
+
+//6号字体 适用微信通知个数
+#define FONTSIZE6 [UIFont systemFontOfSize:8]
+#define FONTSIZE6_BOLD [UIFont boldSystemFontOfSize:8]
+#define COLORSIZE6 (UIColorFromRGB(0x717070))
+
+#define Etappdelegate ((AppDelegate*)([[UIApplication sharedApplication] delegate]))
+
+#import "FMNetWorkManager.h"
+
+#endif
